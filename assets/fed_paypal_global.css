@@ -1,0 +1,12 @@
+
+@media print {
+
+    html, body * {
+        visibility: hidden;
+        background: #ffffff !important;
+    }
+
+    #fed_p_popup .modal-body * {
+        visibility: visible;
+    }
+}

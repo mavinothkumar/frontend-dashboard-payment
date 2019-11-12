@@ -1,0 +1,97 @@
+.fed_shipping_container,
+.fed_tax_container {
+    border: 7px solid #ffffff;
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.payment_definition_wrapper,
+.fed_pay_single_item {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.fed_pay_close_container,
+.fed_pay_close_container_item {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.bc_fed #paypal {
+    font-size: 24px;
+    padding: 5px 24px;
+}
+
+.bc_fed .fed_pay_single_item {
+    padding: 20px;
+    background: #0aaaaa;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.bc_fed .fed_pay_single_transaction_wrapper,
+.bc_fed .fed_pay_recurring_details_wrapper,
+.bc_fed .payment_definition_wrapper {
+    padding: 20px;
+    background: #0aaaaa;
+    color: white;
+    margin: 20px 0;
+}
+
+.bc_fed .bc_fed_wrapper .dropdown-menu > li > a {
+    font-size: 24px;
+    padding: 5px 24px;
+    color: #ffffff !important;
+    border-bottom: 1px solid !important;
+}
+
+.bc_fed .bc_fed_wrapper .dropdown-menu > li > a:hover {
+    color: #000033 !important;
+}
+
+.bc_fed .bc_fed_wrapper .dropdown-menu {
+    background: #000033;
+}
+
+.bc_fed #paypal .caret {
+    width: 15px !important;
+    height: 15px;
+    border-top: 10px dashed !important;
+    border-right: 10px solid transparent !important;
+    border-left: 10px solid transparent !important;
+}
+
+.bc_fed .bc_fed_wrapper .dropdown-menu li {
+    cursor: pointer !important;
+}
+
+.fed_pay_close {
+    width: 30px;
+    height: 30px;
+    background: #000033;
+    color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    body {
+        width: 210mm !important;
+        height: 297mm !important;
+    }
+
+    #fed_p_popup .modal-body * {
+        visibility: visible;
+    }
+}
